@@ -33,7 +33,7 @@ function system-info() {
   OS=$( $(compgen -G "/etc/*release" > /dev/null) && cat /etc/*release | grep ^NAME | tr -d 'NAME="' || echo "${OSTYPE//[0-9.]/}")
 
   ## Dokku Configuration Variables
-  LATEST_DOKKU_VERSION="0.25.10"
+  LATEST_DOKKU_VERSION="0.25.1"
   MINIMUM_DOKKU_VERSION="0.25.0"
 }
 
